@@ -63,38 +63,62 @@
     <div id="overlay" class="hidden" aria-hidden="true"></div>
 
     <main>
-      <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
-        <!-- Content here -->
-      </div>>
-
-      </div>
-      <section class="product-info">
-        <h4>SNEAKER COMPANY</h4>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear 
-          companion. Featuring a durable rubber outer sole, that'll withstand everything the weather can offer.</p>
-      </section>
-      <div class="price-info">
-        <h2>$125.00</h2>
-        <h3 id="discount">50%</h3>
-        <h4>$250.00</h4>
-      </div>
-      <div id="order-controls">
-        <div id="counter">
-          <button id="minus" aria-label="Decrease quantity">
-            <img src="./images/icon-minus.svg" id="minus" />
-          </button>
-          <h4 id="count" aria-live="polite">0</h4>
-          <button id="plus" aria-label="Increase quantity">
-            <img src="./images/icon-plus.svg" id="plus" />
-          </button>
+      <section class="product-layout">
+        <div class="product-gallery">
+          <!-- <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden> -->
+            <img src="./images/image-product-1.jpg" alt="product image" class="main-image" id="mainImage" />
+            <div class="thumbnails">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" data-full="./images/image-product-1-thumbnail" />
+              <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 2" data-full="./images/image-product-1-thumbnail" />
+              <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 3" data-full="./images/image-product-1-thumbnail" />
+              <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 4" data-full="./images/image-product-1-thumbnail" />
+            </div>
+          <!-- </div> -->
+          <!-- lightbox modal -->
+          <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true">
+            <button class="lightbox-close" aria-label="close lightbox"><img src="./images/icon-close.svg" /></button>
+            <div class="lightbox-content">
+              <button class="prev" aria-label="previous image"><img src="./images/icon-previous.svg" /></button>
+              <img src="./images/image-product-1.jpg" alt="large product" id="lightboxImage" />
+              <button class="next" aria-label="next image"><img src="./images/icon-next.svg" /></button>
+              <div class="lightbox-thumbnails">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" data-full="./images/image-product-1-thumbnail" />
+                <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 2" data-full="./images/image-product-1-thumbnail" />
+                <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 3" data-full="./images/image-product-1-thumbnail" />
+                <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 4" data-full="./images/image-product-1-thumbnail" />
+              </div>
+            </div>
+          </div>
+        
         </div>
-        <button class="add-to-cart" aria-label="Add items to cart">
-          <img src="./images/icon-cart.svg" id="cart-btn" alt="" />
-          Add to cart
-        </button>
-      </div>
-
+        <section class="product-info">
+          <h4>SNEAKER COMPANY</h4>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear 
+            companion. Featuring a durable rubber outer sole, that'll withstand everything the weather can offer.</p>
+        
+          <div class="price-info">
+            <h2>$125.00</h2>
+            <h3 id="discount">50%</h3>
+            <h4>$250.00</h4>
+          </div>
+          <div id="order-controls">
+            <div id="counter">
+              <button id="minus" aria-label="Decrease quantity">
+                <img src="./images/icon-minus.svg" id="minus" />
+              </button>
+              <h4 id="count" aria-live="polite">0</h4>
+              <button id="plus" aria-label="Increase quantity">
+                <img src="./images/icon-plus.svg" id="plus" />
+              </button>
+            </div>
+            <button class="add-to-cart" aria-label="Add items to cart">
+              <img src="./images/icon-cart.svg" id="cart-btn" alt="" />
+              Add to cart
+            </button>
+          </div>
+          </section>
+      </section>
     </main>
 
 
