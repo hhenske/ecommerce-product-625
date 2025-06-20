@@ -151,7 +151,7 @@ body {
     margin: 80px auto;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: blue;
+    /* background-color: blue; */
     flex-wrap: nowrap;
 }
 
@@ -163,7 +163,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .product-gallery .main-image {
@@ -254,9 +254,9 @@ h1 {
     color: var(--clr-white);
     padding: 5px 6px 0 7px;
     border-radius: 4px;
-    width: 30px;
-    height: 20px;
-    margin-top: 25px;
+    width: 42px;
+    height: 25px;
+    margin-top: 20px;
 }
 
 #line-through {
