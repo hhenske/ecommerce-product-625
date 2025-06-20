@@ -29,6 +29,7 @@
         <div class="mobile-header-right">
           <button class="cart" aria-label="Open cart">
             <img src="./images/icon-cart.svg" id="cart-m" />
+            <span class="cart-badge hidden" id="cart-badge-m">0</span>
           </button>
           <img src="./images/image-avatar.png" id="avatar-m" alt="profile pic" />
         </div>
@@ -49,10 +50,20 @@
         <div class="desktop-right">
           <button class="cart" aria-label="Open cart">
             <img src="./images/icon-cart.svg" id="cart-d" />
+            <span class="cart-badge hidden" id="cart-badge-d">0</span>
           </button>
           <img src="./images/image-avatar.png" id="avatar-d" alt="profile pic" />
         </div>
       </section>
+      <div id="cart-popup" class="cart-popup hidden" role="dialog" aria-modal="true" arialabelledby="cart-title">
+      <h3 id="cart-title">Cart</h3>
+      <hr />
+      <div class="cart-content" id="cart-content">
+        <p class="empty-msg">Your cart is empty.</p>
+        <!-- Cart items will be dynamically injected here-->
+      </div>
+      <button class="checkout-btn hidden">Checkout</button>
+    </div>
     </header>
     
     <nav id="mobile-menu" class="hidden" aria-label="Mobile navigation menu">
@@ -137,8 +148,9 @@
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Holly Henske</a>.
     </div>
   </div>
+<script src="app.js" defer></script>
 </body>
 </html>
