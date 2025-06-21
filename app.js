@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         "./images/image-product-3.jpg",
         "./images/image-product-4.jpg",
     ];
+
+    mainImage.addEventListener('click', () => {
+        lightbox.classList.remove('hidden');
+        document.body.classList.add('lightbox-active');
+    })
+
     let currentIndex = 0;
 
     function showImage(index) {
@@ -27,8 +33,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxClose = document.querySelector(".lightbox-close");
     const lightboxPrev = document.querySelector("lightbox .prev");
     const lightboxNext = document.querySelector("lightbox .next");
-    const lightboxThumbnails = document.querySelector(".lightbox-thumbnails img");
+    const lightboxThumbnails = document.querySelectorAll(".lightbox-thumbnails img");
 
+
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+            document.body.classList.remove('lightbox-active');
+        });
+    }
+
+    if (lightboxThumbnails && lightboxThumbnails.length > 0) {
+        lightboxThumbnails.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => {
+                currentIndex = index;
+                showLightboxImage(currentIndex);
+            });
+        });
+
+    if (lightboxPrev) {
+        lightboxPrev.addEventListener('click', () => {
+            currentIndex = (currentIndex -1 + images.length) % images.length;
+            showLightboxImage(currentIndex);
+        });
+    }
+
+    if (lightboxNext) {
+        lightboxNext.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showLightboxImage(currentIndex);
+        });
+    }
+
+    }
     function showLightboxImage(index) {
         lightboxImage.src = images[index];
         lightboxThumbnails.forEach((thumb, i) => {
@@ -42,28 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showLightboxImage(currentIndex);
         }
     });
-
-    lightboxClose.addEventListener("click", () => {
-        lightbox.classList.add("hidden");
-    });
-
-    lightboxPrev.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1) % images.length;
-        showLightboxImage(currentIndex);
-    });
-
-    lightboxNext.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        showLightboxImage(currentIndex);
-    });
-
-    lightboxThumbnails.forEach((thumb, i) => {
-        thumb.addEventListener("click", () => {
-            currentIndex = i;
-            showLightboxImage(currentIndex);
-        })
-    })
-
 
     document.querySelector(".arrow.prev").addEventListener("click", () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;

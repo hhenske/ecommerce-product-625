@@ -41,6 +41,15 @@ html, body {
   max-width: 1200px;
 }
 
+body.lightbox-active::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0,0,0,0.4);
+  z-index: 998;
+}
+
 /*====================
   Layout Containers
 ====================*/
@@ -484,6 +493,16 @@ h1 {
 .lightbox img {
   width: 60%;
   height: auto;
+}
+
+.lightbox .active {
+    opacity: 0.5;
+    border: 2px solid var(--clr-orange);
+}
+
+.lightbox-thumbnails img:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .lightbox .prev,
