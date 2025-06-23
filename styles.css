@@ -63,28 +63,24 @@ html, body {
   display: none;
 }
 
-#mobile-menu {
+/* #mobile-menu {
   display: none;
 }
+
+#mobile-menu.active {
+    display: block;
+} */
 
 #menu-toggle {
   background: transparent;
   border: none;
+
 }
 
 #logo-m {
   height: 20px;
   margin-left: 20px;
   margin-top: 18px;
-}
-
-#overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  /* background-color: white; */
-  backdrop-filter: blur;
-  z-index: 999;
 }
 
 #cart-m {
@@ -264,6 +260,7 @@ html, body {
     width: calc(100% - 30px);
     align-self: center;
 }
+
 
 /*====================
   Product Layout
@@ -725,15 +722,17 @@ body.lightbox-active::before {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     right: 0;
-    padding: 0 1rem;
+    padding: 0;
+    margin: 0 15px;
     transform: translateY(-50%);
     z-index: 10;
   }
 
   .arrow {
+    pointer-events: all;
     background: white;
     border: none;
     border-radius: 50%;
@@ -743,8 +742,11 @@ body.lightbox-active::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .arrow img {
@@ -754,6 +756,15 @@ body.lightbox-active::before {
 }
 
 @media (max-width: 570px) {
+@media (max-width: 570px) {
+  .container,
+  .product-layout,
+  .product-gallery {
+    padding: 0;
+    margin: 0;
+  }
+}
+
     .lightbox {
         display: none !important;
     }
@@ -779,15 +790,17 @@ body.lightbox-active::before {
         border: none;
         border-radius: 50%;
         width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
 
-    .arrow img {
-    width: 12px;
-    height: auto;
-  }
+        .arrow img {
+        width: 12px;
+        height: auto;
+     }
+
+
 }
