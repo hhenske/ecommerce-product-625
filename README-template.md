@@ -47,7 +47,7 @@ Users should be able to:
 - JavaScript
 t helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
-## Author
+## Author - Holly Henske
 
 - Website - http://personalportfoliohah.bubbleapps.io
 - Frontend Mentor - https://www.frontendmentor.io/profile/hhenske
