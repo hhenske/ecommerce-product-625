@@ -28,7 +28,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 <img src="https://github.com/user-attachments/assets/17ed9024-1577-4266-80e7-7702caa351bd" width="300" />
 
-<h2>Links</h2>h2>
+<h2>Links</h2>
 
 - Solution URL: https://github.com/hhenske/ecommerce-product-625
 - Live Site URL: https://github.io/hhenske/ecommerce-product-625/
