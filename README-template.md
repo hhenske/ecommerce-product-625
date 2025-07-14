@@ -2,19 +2,16 @@
 
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+:large_blue_diamond: ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-- [Author](#author)
+  - [Author](#author)
 
 
-## Overview
-
-### The challenge
+:blue_book: ### The challenge
 
 Users should be able to:
 
@@ -36,14 +33,14 @@ Users should be able to:
 - Solution URL: https://github.com/hhenske/ecommerce-product-625
 - Live Site URL: https://github.io/hhenske/ecommerce-product-625/
 
-### Built with
+:factory: ### Built with
 - React
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - JavaScript
 
-## Author - Holly Henske
+:small_blue_diamond: ## Author - Holly Henske
 
 - Website - http://personalportfoliohah.bubbleapps.io
 - Frontend Mentor - https://www.frontendmentor.io/profile/hhenske
