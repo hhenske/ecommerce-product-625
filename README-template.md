@@ -8,7 +8,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -28,24 +27,21 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://github.com/user-attachments/assets/d9f94264-0386-4fcf-84e0-780abdc0cff8)
+<img src="https://github.com/user-attachments/assets/d9f94264-0386-4fcf-84e0-780abdc0cff8" width="500" />
 
-![image](https://github.com/user-attachments/assets/17ed9024-1577-4266-80e7-7702caa351bd)
+<img src="https://github.com/user-attachments/assets/17ed9024-1577-4266-80e7-7702caa351bd" width="500" />
 
 ### Links
 
 - Solution URL: https://github.com/hhenske/ecommerce-product-625
 - Live Site URL: https://github.io/hhenske/ecommerce-product-625/
 
-## My process
-
 ### Built with
-
+- React
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - JavaScript
-t helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author - Holly Henske
 
