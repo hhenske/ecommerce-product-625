@@ -1,4 +1,4 @@
-# Frontend Mentor - E-commerce product page solution
+:large_blue_circle: # Frontend Mentor - E-commerce product page solution :large_blue_circle:
 
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="https://github.com/user-attachments/assets/d9f94264-0386-4fcf-84e0-780abdc0cff8" width="500" />
+<img src="https://github.com/user-attachments/assets/d9f94264-0386-4fcf-84e0-780abdc0cff8" width="300" />
 
-<img src="https://github.com/user-attachments/assets/17ed9024-1577-4266-80e7-7702caa351bd" width="500" />
+<img src="https://github.com/user-attachments/assets/17ed9024-1577-4266-80e7-7702caa351bd" width="300" />
 
 ### Links
 
